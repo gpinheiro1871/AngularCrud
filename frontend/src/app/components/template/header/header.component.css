@@ -18,5 +18,9 @@
 .header .title-group a{
     display: flex;
     align-items: center;
-    padding-left: 25px;
+    padding-left: 20px;
+}
+
+.header .title-group i {
+    padding-right: 5px;
 }
