@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductCreateComponent implements OnInit {
 
+  coolAttribute = "randomValue";
+  coolCounter = 0;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  doSomething(): void{
+    console.log("doing something!");
+    this.coolCounter++;
+  }
 }
