@@ -1,0 +1,19 @@
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.price-input {
+    text-align: right;
+}
+
+.price-input::-webkit-outer-spin-button,
+.price-input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+button {
+    margin: 15px;
+}
