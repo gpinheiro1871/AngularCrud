@@ -1,4 +1,21 @@
 .full-width-table {
     width: 100%;
   }
-  
+
+button {
+    border-radius: 20%;
+    border-width: 0;
+    padding: 5px;
+    width: 3rem;
+    margin: 5px;
+}
+
+.edit-button{
+    background-color: #d9cd26;
+    color: whitesmoke;
+}
+
+.delete-button {
+    background-color: #e35e6b;
+    color: whitesmoke;
+}
