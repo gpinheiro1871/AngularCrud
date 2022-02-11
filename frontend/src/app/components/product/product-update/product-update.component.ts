@@ -16,7 +16,7 @@ export class ProductUpdateComponent implements OnInit {
     private router: Router,
     private route: ActivatedRoute) {
 
-    const productId = this.route.snapshot.paramMap.get('id')!;
+    const productId = +this.route.snapshot.paramMap.get('id')!;
 
     this.productService.readById(productId).subscribe((product) => {
       this.product = product;

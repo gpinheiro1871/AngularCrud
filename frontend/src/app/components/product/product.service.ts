@@ -34,7 +34,7 @@ export class ProductService {
     return this.httpClient.get<Product[]>(this.baseUrl);
   }
 
-  readById(id: string): Observable<Product>{
+  readById(id: number): Observable<Product>{
     const url = `${this.baseUrl}/${id}`;
     return this.httpClient.get<Product>(url);
   }
@@ -44,7 +44,7 @@ export class ProductService {
     return this.httpClient.put<Product>(url, product);
   }
 
-  delete(id: string): Observable<Product>{
+  delete(id: number): Observable<Product>{
     const url = `${this.baseUrl}/${id}`;
     return this.httpClient.delete<Product>(url);
   }
